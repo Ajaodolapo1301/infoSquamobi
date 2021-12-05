@@ -55,7 +55,6 @@ class _GamePlayCardState extends State<GamePlayCard> with TickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
-
     return Stack(
       clipBehavior: Clip.none,
       children: [
@@ -63,7 +62,7 @@ class _GamePlayCardState extends State<GamePlayCard> with TickerProviderStateMix
         Container(
         width: 28 * SizeConfig.widthMultiplier,
           clipBehavior: Clip.antiAlias,
-          margin: EdgeInsets.only(bottom:10.0 * widget.factorChange , top:10.0 * widget.factorChange , left: 5, right: 5  ),
+          margin: EdgeInsets.only(bottom:7.0 * widget.factorChange , top:7.0 * widget.factorChange , left: 5, right: 5  ),
 
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(17.0),
               border: Border.all(color: widget.haveFocus? purple: ash, width: widget.haveFocus ?3: 1 )
@@ -91,9 +90,9 @@ class _GamePlayCardState extends State<GamePlayCard> with TickerProviderStateMix
 
                     Column(
                       children: [
-                        Text(widget.mainText, textAlign: TextAlign.center, style: kBold.copyWith(fontSize: 10),),
+                        Text(widget.mainText, textAlign: TextAlign.center, style: kBold.copyWith(fontSize: 11),),
                         const SizedBox(height: 10,),
-                        Text(widget.subText, style: kBold500.copyWith(fontSize: 10),),],
+                        Text(widget.subText, style: kBold500.copyWith(fontSize: 11),),],
                     ),
                     Container()
                   ],

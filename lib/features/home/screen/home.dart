@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   children: <Widget>[
                     Text("Daily Quotes \nPremium", textAlign: TextAlign.center,
-                      style: kBold.copyWith(fontSize: thirtyFive,),),
+                      style: kBold.copyWith(fontSize: thirtyFive, letterSpacing: 1.5),),
 
                      SizedBox(height: thirty,),
 
@@ -92,18 +92,21 @@ class _MyHomePageState extends State<MyHomePage> {
                         controller: pageController,
                         itemBuilder: (context, index) {
                           return Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 20),
-                              child: Text(TextModel.allText[index].mainText,
+                              padding: const EdgeInsets.symmetric(horizontal: 30),
+                              child: Text("\"${TextModel.allText[index].mainText}\"",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
+
                                   height: 1.5,
                                   color:Colors.black54,
-                                  fontSize: sixteen,
+                                  fontSize: 2.2 * SizeConfig.textMultiplier,
                                   fontWeight: FontWeight.w500,
                                  ),));
                         },
                       ),
                     ),
+
+
 
 
                     Center(
@@ -117,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
                     SizedBox(
-                      height: 20.9 * SizeConfig.heightMultiplier,
+                      height: 20 * SizeConfig.heightMultiplier,
 
                         child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
@@ -182,13 +185,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10, bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text("Terms", style: kBold.copyWith(fontSize: 12),),
-                  Text("Privacy", style: kBold.copyWith(fontSize: 12),),
-                  Text("Restore", style: kBold.copyWith(fontSize: 12),)
+                  Text("Terms", style: kBold.copyWith(fontSize: 12, color: Colors.black54,),),
+                  Text("Privacy", style: kBold.copyWith(fontSize: 12,color: Colors.black54, ),),
+                  Text("Restore", style: kBold.copyWith(fontSize: 12, color: Colors.black54,),)
                 ],
               ),
             )
@@ -209,6 +212,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
 }
+
+
 
 
 

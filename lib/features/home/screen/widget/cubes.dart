@@ -30,7 +30,7 @@ class Cubes extends StatelessWidget {
               ),
               child: Image.asset("$imagePath/dashboard.png", height: thirty, width: thirtyWidth, color: cubeColor,)),
           const SizedBox(width: 13,),
-          Text(text, style:kBold500.copyWith(fontSize: sixteen, fontWeight: FontWeight.w600) ,)
+          Text(text, style:kBold500.copyWith(fontSize: sixteen, fontWeight: FontWeight.w600, color: Colors.black87,) ,)
 
         ],
       ),

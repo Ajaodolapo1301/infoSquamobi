@@ -11,18 +11,18 @@ class Pricing {
   static   final List<Pricing> allText =[
     Pricing(
       freeTrial: false,
-      mainText: "\$999.99 per month",
+      mainText: "999.99 \$per month",
       subText: "Auto renewal"
     ),
     Pricing(
-      mainText: "\$999.99 per month",
+      mainText: "999.99 \$per month",
       subText: "Auto renewal",
       freeTrial: true,
     ),
 
     Pricing(
         freeTrial: false,
-        mainText: "\$999.99 per month",
+        mainText: "999.99 \$per month",
         subText: "Auto renewal"
     )
   ];
