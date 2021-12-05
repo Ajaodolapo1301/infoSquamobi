@@ -6,8 +6,8 @@ import 'package:squamobi_test/core/styles/color_utils.dart';
 import 'package:squamobi_test/core/styles/font_sizes.dart';
 import 'package:squamobi_test/core/utils/sizeConfig/size_config.dart';
 
-class GamePlayCard extends StatefulWidget {
-  const GamePlayCard({
+class PricingWidget extends StatefulWidget {
+  const PricingWidget({
     Key? key,
     required this.mainText,
     required this.subText,
@@ -23,10 +23,10 @@ class GamePlayCard extends StatefulWidget {
   final double factorChange;
 
   @override
-  State<GamePlayCard> createState() => _GamePlayCardState();
+  State<PricingWidget> createState() => _PricingWidgetState();
 }
 
-class _GamePlayCardState extends State<GamePlayCard> with TickerProviderStateMixin{
+class _PricingWidgetState extends State<PricingWidget> with TickerProviderStateMixin{
 
   late Animation<double> animation;
   late AnimationController animationController;

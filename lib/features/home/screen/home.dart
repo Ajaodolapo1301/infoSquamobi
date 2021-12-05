@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                      SizedBox(height: thirtyFive,),
-                    SizedBox(height: twenty,),
+                    SizedBox(height: 10,),
 
 
                     SizedBox(
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       currentIndex = index;
                                     });
                                   },
-                                  child: GamePlayCard(
+                                  child: PricingWidget(
                                     factorChange: pricing.freeTrial ? 0.0: (1.toDouble() - index).abs(),
                                     mainText: pricing.mainText,
                                     subText: pricing.subText,
@@ -153,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     currentIndex = index;
                                   });
                                 },
-                                child: GamePlayCard(
+                                child: PricingWidget(
                                   freeTrial: pricing.freeTrial,
                                   factorChange:  (1.toDouble() - index).abs(),
                                   mainText: pricing.mainText,
