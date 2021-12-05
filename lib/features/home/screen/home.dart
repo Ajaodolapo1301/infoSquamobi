@@ -185,7 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(top: 10, bottom: 10),
+              padding: const EdgeInsets.only(top: 10, bottom: 15),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [

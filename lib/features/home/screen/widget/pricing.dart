@@ -60,7 +60,7 @@ class _PricingWidgetState extends State<PricingWidget> with TickerProviderStateM
       children: [
 
         Container(
-        width: 28 * SizeConfig.widthMultiplier,
+        width: 29 * SizeConfig.widthMultiplier,
           clipBehavior: Clip.antiAlias,
           margin: EdgeInsets.only(bottom:7.0 * widget.factorChange , top:7.0 * widget.factorChange , left: 5, right: 5  ),
 
