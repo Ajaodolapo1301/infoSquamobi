@@ -63,6 +63,7 @@ class MyApp extends StatelessWidget {
                 debugShowCheckedModeBanner: false,
                 title: 'Squamobi',
                 theme: ThemeData(
+                  fontFamily: 'DMSans',
                   textSelectionTheme: const TextSelectionThemeData(
                       cursorColor: Colors.grey
                   ),
